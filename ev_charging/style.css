@@ -1,0 +1,229 @@
+/* Basic reset and body styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif; /* Clean and modern font */
+    background-color: #f4f4f4; /* Light background color for the body */
+    line-height: 1.6; /* Improved readability */
+}
+
+/* Navbar styles */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2c3e50; /* Darker background for the navbar */
+    padding: 15px 30px; /* Increased padding for a more spacious look */
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav .logo h1 {
+    color: white;
+    font-size: 26px; /* Slightly larger font size */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 30px; /* Increased margin for better spacing */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 8px 12px;
+    transition: background-color 0.3s ease; /* Smooth transition effect */
+}
+
+nav ul li a:hover {
+    background-color: #34495e; /* Subtle hover effect */
+    border-radius: 4px;
+}
+
+/* Home Section Styles */
+.home-section {
+    display: flex;
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    height: calc(100vh - 60px); /* Adjust height to account for navbar */
+    padding: 20px; /* Optional padding */
+}
+
+.home-content {
+    text-align: center; /* Center text inside the content */
+    max-width: 450px; /* Optional max width for the content */
+    background-color: white; /* White background for contrast */
+    padding: 30px; /* Increased padding for comfort */
+    border-radius: 10px; /* Rounded corners for a softer look */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Deeper shadow for depth */
+}
+
+/* Available Stations Section Styles */
+.available-stations-section {
+    padding: 40px 20px; /* Increased padding for spaciousness */
+}
+
+.available-stations-section h2 {
+    text-align: center; /* Center the heading */
+    margin-bottom: 30px; /* More space below the heading */
+}
+
+.station-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center the station boxes */
+}
+
+.station-box {
+    background-color: #d1e7dd; /* Light teal background for the station box */
+    border-radius: 10px; /* Rounded corners for station boxes */
+    padding: 20px;
+    margin: 15px; /* Increased margin for better spacing */
+    width: calc(33% - 30px); /* Responsive width with margin consideration */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.station-box h3 {
+    font-size: 22px; /* Larger font size for headings */
+}
+
+.station-box p {
+    font-size: 16px;
+}
+
+.station-box button {
+    background-color: #28a745; /* Green background for buttons */
+    color: white;
+    border-radius: 5px;
+    padding: 10px 15px; /* Increased padding for comfort */
+    cursor: pointer;
+}
+
+.station-box button:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+/* Contact Section Styles */
+.contact-section {
+    padding: 40px 20px; 
+}
+
+.contact-section h2 {
+    text-align: center; 
+}
+
+.contact-box {
+    background-color: #d1e7dd; 
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 20px; 
+}
+
+.contact-box input,
+.contact-box textarea {
+   width: calc(100% - 20px); 
+   padding: 10px;
+   margin-top: 10px;
+   border-radius: 5px;
+   border-width :1.5 px ;
+   border-color :#ccc ;
+}
+
+/* Footer Styles */
+footer {
+   background-color:#2c3e50 ;
+   color:white ;
+   text-align:center ;
+   padding :20 px ;
+   position :relative ;
+   bottom :0 ;
+   width :100% ;
+}
+.footer-content p{
+   margin :5 px ;
+}
+
+/* Booked Slots Section Styles */
+.booked-slots-section {
+   padding :40 px ; 
+}
+.booked-slots-section h2{
+   text-align:center ; 
+}
+.booked-slots-container{
+   display:flex ;
+   flex-direction :column ; 
+   align-items:center ; 
+}
+.booked-slot{
+   background-color:#d1e7dd ; 
+   border-radius :10 px ; 
+   padding :15 px ; 
+   margin :15 px ; 
+   width :300 px ; 
+}
+.edit, .delete{
+   margin-right :10 px ; 
+}
+.edit:hover, .delete:hover{
+   text-decoration :underline ; 
+}
+
+/* Home Section Styles */
+.home-section {
+    display: flex;
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    height: calc(100vh - 60px); /* Adjust height to account for navbar */
+    padding: 40px 20px; /* Increased padding for spaciousness */
+    background-color: #f4f4f4; /* Background color */
+}
+
+.home-content {
+    text-align: left; /* Left-align text inside the content */
+    max-width: 600px; /* Optional max width for the content */
+    background-color: white; /* White background for contrast */
+    padding: 30px; /* Increased padding for comfort */
+    border-radius: 10px; /* Rounded corners for a softer look */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Deeper shadow for depth */
+}
+
+.input-group {
+    margin-bottom: 20px; /* Space between input groups */
+}
+
+.input-group label {
+    display: block; /* Make label a block element */
+    margin-bottom: 8px; /* Space below label */
+    font-weight: bold; /* Bold labels for emphasis */
+}
+
+.input-group input {
+    width: calc(100% - 20px); /* Full width minus padding */
+    padding: 10px; /* Padding inside input fields */
+    border-radius: 5px; /* Rounded corners for inputs */
+    border: 1px solid #ccc; /* Light border color */
+}
+
+.input-group button {
+    background-color: #28a745; /* Green background for buttons */
+    color: white;
+    border-radius: 5px;
+    padding: 10px 15px; /* Increased padding for comfort */
+    cursor: pointer;
+    margin-top: 10px; /* Space above buttons */
+}
+
+.input-group button:hover {
+    background-color: #218838; /* Darker green on hover */
+}
